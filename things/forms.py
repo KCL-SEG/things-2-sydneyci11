@@ -5,5 +5,5 @@ from .models import Thing
 
 class ThingForm(forms.Form):
     name = forms.CharField(max_length=35)
-    description = forms.CharField(widget=forms.Textarea(attrs={'rows':3, 'cols': 5}))
+    description = forms.Textarea(attrs={'rows':3, 'cols': 5})
     quantity = forms.IntegerField()
